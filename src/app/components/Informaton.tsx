@@ -61,7 +61,7 @@ const Informaton = () => {
 
     ])
   return (
-    <div className='container flex flex-col gap-4 text-justify md:text-center pt-4'>
+    <div className='container flex flex-col gap-4 text-justify md:text-center pt-4 '>
         <div className="">
             <h1 className='font-bold text-xl font-serif text-center'>helping trought sharing</h1>
         </div>
@@ -79,10 +79,10 @@ const Informaton = () => {
         <div className="font-serif ">
             <button className='hover:text-green-400 border-2 p-1 rounded-lg'>put your aprons on</button>
         </div>
-        <div className="galerie grid grid-cols-3 md:grid-cols-5 gap-3 ">
+    <div className="galerie grid grid-cols-3 md:grid-cols-5 gap-3 ">
         {
             galerie.map((data, i) => (
-            <div className="rounded-full cursor-pointer hover:bg-green-200 duration-500 bg-green-700" key={i}>
+            <div className="rounded-full cursor-pointer hover:bg-green-200 duration-500 " key={i}>
             <Image src={data.imgs} className=' rounded-3xl'
             alt=''
             width={300}

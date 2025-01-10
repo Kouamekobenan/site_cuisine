@@ -1,5 +1,7 @@
 import Banniere from "./components/Banniere";
 import Blog from "./components/Blog";
+import Customers from "./components/Customers";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Informaton from "./components/Informaton";
 import Videos from "./components/Videos";
@@ -13,6 +15,8 @@ export default function Home() {
         <Videos/>
         <Blog/>
         <Informaton/>
+        <Customers/>
+        <Footer/>
       </div>
     
     

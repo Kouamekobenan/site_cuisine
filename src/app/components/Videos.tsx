@@ -6,7 +6,7 @@ import Button from './Button';
 const Videos = () => {
   
   return (
-    <div className="grid grid-rows-1 md:grid-cols-2 gap-4 md:p-6 mt-3">
+    <div id='about' className="grid grid-rows-1 md:grid-cols-2 gap-4 md:p-6 mt-3">
       <div className=" border-l-2 border-l-green-400 pl-2 rounded-l-full">
         <Image src={imgs}
         className='rounded-full bg-green-400'

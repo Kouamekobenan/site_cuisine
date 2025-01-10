@@ -83,7 +83,7 @@ const Blog = () => {
     ])
 
   return (
-    <div className='container md:p-6 flex flex-col gap-2 pt-6'>
+    <div id='product' className='container md:p-6 flex flex-col gap-2 pt-6'>
         <div className="text-center font-bold">futured products</div>
         <div className="pb-6 text-justify md:text-center">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quam dolores, 

@@ -1,6 +1,7 @@
 
 import React from 'react'
 import { ChefHat } from 'lucide-react'
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -13,12 +14,13 @@ const Header = () => {
             <span className=''> cookink</span>
         </div>
         <div className="family flex text-center flex-col justify-center md:flex-row gap-6  ">
-            <span className='lien_hover'>Home</span>
-            <span className='lien_hover'>About</span>
-            <span className='lien_hover'>products</span>
-            <span className='lien_hover'>Review</span>
+          
+            <Link href="#" className='lien_hover'>Home</Link>
+            <Link href='#about' className='lien_hover'>About</Link>
+            <Link href="#product" className='lien_hover'>products</Link>
+            <Link href='#review'  className='lien_hover'>Review</Link>
             <span className='lien_hover'>Faq</span>
-            <span className='lien_hover'>contact</span>
+            <Link href='../contact' className='lien_hover'>contact</Link>
         </div>
         <div className="md:hidden">X</div>
     </div>

@@ -18,6 +18,10 @@
 
 
 /* La partie css*/
+html {
+  scroll-behavior: smooth;
+}
+
 .fonts{
   font-family: Oswald;
 }
