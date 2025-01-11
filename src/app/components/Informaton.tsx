@@ -79,17 +79,41 @@ const Informaton = () => {
         <div className="font-serif ">
             <button className='hover:text-green-400 border-2 p-1 rounded-lg'>put your aprons on</button>
         </div>
-    <div className="galerie grid grid-cols-3 md:grid-cols-5 gap-3 ">
-        {
-            galerie.map((data, i) => (
-            <div className="rounded-full cursor-pointer hover:bg-green-200 duration-500 " key={i}>
-            <Image src={data.imgs} className=' rounded-3xl'
-            alt=''
-            width={300}
-            height={200}/>
-            </div>
-          ))}
-        </div>
+        <div className="galerie grid grid-cols-3 md:grid-cols-5 gap-3">
+  {galerie.map((data, i) => (
+    <div
+      className="relative rounded-full cursor-pointer group overflow-hidden"
+      key={i}
+    >
+      {/* Image avec animation */}
+      <Image
+        src={data.imgs}
+        className="rounded-3xl duration-500 transform group-hover:scale-105"
+        alt=""
+        width={300}
+        height={200}
+      />
+      
+      {/* Superposition verte avec opacité */}
+      <div className="absolute inset-0 bg-slate-800 opacity-0 group-hover:opacity-30 duration-500 pointer-events-none"></div>
+      
+      {/* Icône blanche centrée */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 duration-500">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-12 w-12 text-green-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+        </svg>
+      </div>
+    </div>
+  ))}
+</div>
+
     </div>
   )
 }

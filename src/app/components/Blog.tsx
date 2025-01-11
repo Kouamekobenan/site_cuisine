@@ -98,8 +98,8 @@ const Blog = () => {
                 key={prod.id}>
                     <div className="flex justify-end">
                         <section className='flex gap-2 cursor-pointer'>
-                        <span >{prod.icon2}</span>
-                        <span className='border-2 border-green-400 rounded-full p-1'>{prod.icon1}</span>
+                        <span className='p-1'>{prod.icon2}</span>
+                        <span className='border-2 border-green-200 rounded-full p-1 '>{prod.icon1}</span>
                         
                         </section>
                         
