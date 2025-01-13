@@ -8,8 +8,7 @@ import Videos from "./components/Videos";
 
 export default function Home() {
   return (
-      <div className="container border-8 border-green-600 p-4">
-       
+      <div className="container md:border-8  p-4">
         <Banniere/>
         <Videos/>
         <Blog/>

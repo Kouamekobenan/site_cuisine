@@ -20,8 +20,9 @@ const Header = () => {
   };
 
   return (
-    <div className="container p-4 w-full flex flex-col md:flex-row justify-between md:p-6 ">
-      <div className="font-serif flex gap-1 text-2xl">
+    <div className="container md:fixed p-4 w-full flex flex-col md:flex-row justify-between md:p-6 bg-slate-100
+    filter  backdrop-blur-sm">
+      <div className="font-serif flex gap-1 text-2xl z-10 ">
         <span>smart </span>
         <span className="text-green-400 text-5xl">
           <ChefHat />

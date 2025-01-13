@@ -12,10 +12,10 @@
   }
 
   .lien_hover{
-    @apply  cursor-pointer hover:underline duration-500 hover:text-green-500
+    @apply  cursor-pointer hover:underline duration-500 hover:text-green-500 
   }
   .inputs{
-    @apply border-2 h-8 text-justify pl-2 rounded-lg
+    @apply border-2 h-10 text-justify pl-2 rounded-lg 
   }
 }
 

@@ -7,7 +7,7 @@ import { Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <div id='footer' className='container grid grid-cols-1 gap-4 md:grid-cols-4 border-y-2 py-4 border-y-green-400'>
+    <div id='footer' className='container grid grid-cols-1 gap-4 md:grid-cols-4 border-y-2 py-4 border-t-green-400'>
         <div className="flex flex-col gap-3 justify-center">
             <div className="text-bold text-xl font-serif">contact Us</div>
             <div className="">
@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="flex flex-col gap-3 ">
-            <div className=" text-bold text-xl font-serif">Help info</div>
+            <div className="text-bold text-xl font-serif">Help info</div>
             <div className="">
                 <p>Faq</p>
                 <p>Terms and condition</p>
@@ -47,9 +47,9 @@ const Footer = () => {
             <div className=" text-bold text-xl font-serif"><h1>Follow us</h1></div>
             <div className="">We are available, in social media</div>
             <div className="flex gap-3">
-                <Facebook className='text-blue-500 cursor-pointer hover:bg-green-200'/>
+                <span className='text-blue-500 cursor-pointer hover:bg-green-200'><Facebook /></span>
                 <span className='cursor-pointer text-blue-300 hover:bg-green-200'><Twitter/></span>
-                <span className='cursor-pointe text-orange-400 hover:bg-green-200'><Instagram/></span>
+                <span className='cursor-pointer text-orange-400 hover:bg-green-200'><Instagram/></span>
                 <span className='cursor-pointer text-red-500 hover:bg-green-200'><Youtube/></span>
             </div>
         </div>

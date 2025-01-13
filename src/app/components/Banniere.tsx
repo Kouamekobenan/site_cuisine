@@ -18,7 +18,7 @@ const Banniere = () => {
                <Button label="Explorez Us"/>
             </section>
         </div>
-        <div className="rounded-full border-4 bg-green-400 border-l-green-400">
+        <div className=" border-4 bg-green-400 border-l-green-400 rounded-full mt-[50px]">
             <Image className=''
             src={imgs}
             width={500}
